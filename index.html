@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>أصيل الهيبة PRO - التميز في الإدارة</title>
+    <meta name="theme-color" content="#0B1120">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2845/2845873.png">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --royal-gold: #D4AF37;
+        --gold-light: #F9E29C;
+        --midnight: #0B1120;
+      }
+      body {
+        font-family: 'Tajawal', sans-serif;
+        background-color: #f8fafc;
+        margin: 0;
+        overflow-x: hidden;
+        color: #1e293b;
+      }
+      .gold-gradient {
+        background: linear-gradient(135deg, #996515 0%, #D4AF37 50%, #F9E29C 100%);
+      }
+      .loading-screen {
+        position: fixed;
+        inset: 0;
+        background: #0B1120;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: #f1f5f9; }
+      ::-webkit-scrollbar-thumb { background: #D4AF37; border-radius: 10px; }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "xlsx": "https://esm.sh/xlsx@^0.18.5",
+    "jspdf": "https://esm.sh/jspdf@^4.0.0",
+    "jspdf-autotable": "https://esm.sh/jspdf-autotable@^5.0.7",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@^2.89.0",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+  <script type="module" crossorigin src="./assets/index-qb3v51Oo.js"></script>
+</head>
+  <body>
+    <div id="loading-screen" class="loading-screen">
+      <div class="relative w-24 h-24 mb-8">
+        <div class="absolute inset-0 border-4 border-amber-500/20 rounded-[2rem]"></div>
+        <div class="absolute inset-0 border-4 border-t-amber-500 rounded-[2rem] animate-spin"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <span class="text-amber-500 font-black text-2xl">أ</span>
+        </div>
+      </div>
+      <h2 class="text-white font-black text-3xl italic tracking-tighter animate-pulse">أصيل الهيبة PRO</h2>
+      <p id="loading-status" class="text-amber-500/50 text-[10px] font-bold mt-4 uppercase tracking-[0.4em]">التميز في الإدارة المالية</p>
+    </div>
+
+    <div id="root"></div>
+
+</body>
+</html>
